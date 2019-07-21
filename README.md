@@ -15,6 +15,12 @@ Mars-Rover technical assignment for platform45
    $ virtualenv yourenv -p python3.6
    $ source bin/activate
 
-     now that the virtual environment is setup, please keep the terminal window open and
-     enter the following into the terminal and then follow the instructions:
-   $ python app.py 
+
+4) Verify that the correct python environment is active by typing the following into the terminal:
+  $ python --version
+
+  if the out put is "Python 3.6.8" then the correct version was installed.
+
+5) Now that the virtual environment is setup, please keep the terminal window open and
+   enter the following into the terminal and then follow the instructions:
+  $ python app.py 
