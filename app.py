@@ -11,7 +11,7 @@ def set_mars_plateau():
         try:
             mars_plateau  = input("Provide the area (length and width) which you want your rover to roam (must be 2 integer values and separated by a space eg: 5 5): \n").split()
             if(len(mars_plateau) < 2 or len(mars_plateau) > 2):
-                print("\n***Please remove unnecessary spaces***\n")
+                print("\n***Please add space between values***\n")
                 continue
 
             mars_plateau = Mars(int(mars_plateau[0]),int(mars_plateau[1]))
@@ -112,10 +112,7 @@ def __main__():
         rovers.append(marsrover)
 
     for rv in rovers:
-        if(Mars.validate_boundary(rv)):
-            print(rv.x, rv.y, rv.direction)
-        else:
-            print('mars_rover crached as it lost connection when crossing border')
+        print(rv.x, rv.y, rv.direction)
 
 if __name__ == "__main__":
     __main__()
