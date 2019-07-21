@@ -38,6 +38,9 @@ def __main__():
             else: 
                 mars_rover = instruction_handler.change_position(mars_rover)
 
+            rovers.append(mars_rover)
+        for rv in rovers:
+            print(rv.x, rv.y, rv.direction)
 
 if __name__ == "__main__":
     __main__()
